@@ -37,7 +37,9 @@ class App extends React.Component {
     render() {
         return (
             <div className={style.TodoApp}>
-                <div><Title/> <TodoList/></div>
+                <div><Title/> 
+                <TodoList data={this.state.data}/>
+                </div>
                 Liczba zadań: {this.state.data.length}
                 
                
