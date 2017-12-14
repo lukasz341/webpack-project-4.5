@@ -1,4 +1,5 @@
 import React from 'react';
+import style from './TodoList.css';
 
 class TodoList extends React.Component {
     get data() {
@@ -8,9 +9,9 @@ class TodoList extends React.Component {
     render() {
         return (
             <div>
-                <ul>                         
+                <ol>                         
                 {this.data}  
-                </ul>     
+                </ol>     
             </div>
         );
     }
